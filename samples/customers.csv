@@ -1,0 +1,4 @@
+customer_id,name,email,balance,signup_date,last_seen
+1001,Alice Smith,alice@example.com,150.50,2024-01-15,2024-03-01 10:30:00
+1002,Bob Jones,bob@example.com,0,2024-02-01,2024-03-02 08:00:00
+1003,Carol White,carol@example.com,2300.75,2024-02-20,

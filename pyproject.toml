@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thereporter"
+version = "0.1.0"
+description = "Import client CSV files into a multi-tenant MySQL STG / ODS / DW pipeline"
+requires-python = ">=3.10"
+dependencies = ["PyMySQL>=1.1", "Flask>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+reporter = "reporter.cli:main"
+reporter-admin = "reporter.web:main"
+
+[tool.setuptools]
+packages = ["reporter"]
+
+[tool.setuptools.package-data]
+reporter = ["*.sql"]
